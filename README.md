@@ -178,5 +178,6 @@ export const LOADING_STRUCTURES = {
             ],
         }
         ```
+- Since the Component has to be very minimal, for the ease of usage, so now we have added only 3 props which is required
 
 
