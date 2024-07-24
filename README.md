@@ -158,3 +158,25 @@ export const LOADING_STRUCTURES = {
 };
 ```
 
+### Approach
+- Structure of the data, is designed in such a way that the loaderComponent will be recursively go through the array and develop animation around the actual view
+    - Simple Structure
+       ```
+       SIMPLE_STRUCTURE: [
+        { type: "text", height: "400px", width: "650px" }, 
+        -> type define the type of field(text, image) | height and width define the dimentions of the structure
+        ]
+       ```
+    - Nested Structure
+        it will render 2 children around the view
+        ```
+        {
+            type: "multipleTiles",
+            children: [
+                { type: "text", width: "100px", height: "20px" },
+                { type: "text", width: "100px", height: "20px" },
+            ],
+        }
+        ```
+
+
