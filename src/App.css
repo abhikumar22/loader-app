@@ -1,0 +1,14 @@
+.App_Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.App_Container {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
