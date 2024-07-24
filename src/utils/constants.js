@@ -1,6 +1,6 @@
 export const LOADING_STRUCTURES = {
   SIMPLE_STRUCTURE: [
-    { type: "text", height: "400px", width: "650px"},
+    { type: "text", height: "400px", width: "650px" },
     { type: "text", width: "500px", height: "20px" },
     { type: "text", width: "250px", height: "20px" },
   ],
