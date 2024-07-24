@@ -18,7 +18,7 @@ https://loader-app.netlify.app/
 ## Props
 | Name | Default Value | isOptional | Description | Type | Example
 |----------|----------|----------|----------|----------|----------|
-| structureData    |  []        |  false        | structure of loader in array, which will have close to structure like view | array of objects | [ { type: "text", height: "400px", width: "650px"}, { type: "text", width: "500px", height: "20px" }, { type: "text", width: "250px", height: "20px" }, ]
+| structureData    |  []        |  true        | structure of loader in array, which will have close to structure like view | array of objects | [ { type: "text", height: "400px", width: "650px"}, { type: "text", width: "500px", height: "20px" }, { type: "text", width: "250px", height: "20px" }, ]
 |  isLoading    |  false        |    false      | loading state, which switches between loader and view | boolean
 | children    |          | false         | Actual view, which replaces the loader after some interval         | View(collection of div's) | <div> <div> <img style={{ height: "400px", width: "650px" }} src={ "https://images.pexels.com/photos/126271/pexels-photo-126271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" } /> </div> <div> Lorem Ipsum is simply dummy text of the printing and typesetting industry </div> <div>Contrary to popular belief in everyone</div> </div>
 
@@ -179,5 +179,6 @@ export const LOADING_STRUCTURES = {
         }
         ```
 - Since the Component has to be very minimal, for the ease of usage, so now we have added only 3 props which is required
+- If no structure is provided, then a default loader is shown
 
 

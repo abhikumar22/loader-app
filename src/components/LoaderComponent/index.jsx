@@ -37,6 +37,12 @@ const LoaderComponent = ({
     });
   };
 
+  // check if structure is emopty, then render default loader
+  const isStructureEmpty = !(structureData && structureData.length>0);
+  if(isStructureEmpty){
+    return <div className="Loader_Component_Default_Loader"></div>
+  }
+
   return <div className="Loader_Component">{renderNestedStructure(structureData)}</div>;
 };
 
